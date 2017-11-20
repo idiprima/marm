@@ -90,6 +90,3 @@ package arm_types is
 	
 end package;
 
-package body arm_types is
-
-end package body;

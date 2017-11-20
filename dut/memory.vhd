@@ -70,7 +70,7 @@ architecture rtl of memory is
 
 	signal avalon_acknowledge : std_logic;
 
-	function get_byteen(adr: std_logic_vector) return std_logic_vector is
+	function get_byteen(adr: std_logic_vector(1 downto 0)) return std_logic_vector is
 	begin
 			-- Assuming little endian memory
 			case adr(1 downto 0) is

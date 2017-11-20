@@ -84,6 +84,7 @@ end entity decode;
 
 architecture rtl of decode is
 
+	signal alu_operation : ALU_OPERATION;
 	signal state, next_state : DECODE_FSM;
 	
 	signal barrelshift_operand : std_logic;
@@ -92,7 +93,6 @@ architecture rtl of decode is
 	signal literal_data : std_logic_vector(23 downto 0);
 	signal opb_is_literal : std_logic;
 	signal opb_sel : std_logic;
-	signal alu_operation : ALU_OPERATION;
 	signal condition : std_logic_vector(3 downto 0);
 	signal affect_sflags : std_logic;
 	signal data_sel : std_logic;

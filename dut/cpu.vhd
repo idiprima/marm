@@ -110,7 +110,7 @@ begin
 	c: entity work.cache(synth) generic map(
 		INSTR_BADDR_BITWDTH => 32,  -- input coe_cpu_address width in bits
 		BLOCK_BITWIDTH => CACHE_BLOCK_BITWIDTH,   -- byte address range of a block (hence C_BLOCK_SIZE = 2**BLOCK_BITWIDTH)
-		CACHE_WAYS => 1,   -- number of ways in the cache (power of 2), for now only direct-mapped
+		--CACHE_WAYS => 1,   -- number of ways in the cache (power of 2), for now only direct-mapped
 		CACHE_SIZE => 4096 -- cache size in bytes, must be a factor of C_BLOCK_SIZE * CACHE_WAYS
  	) port map(
 		-- Globals
